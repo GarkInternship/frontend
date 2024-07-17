@@ -27,6 +27,7 @@ import { ToastModule } from 'primeng/toast';
 import { SliderModule } from 'primeng/slider';
 import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
+import {PlanificationModule} from "./pages/planification/planification.module";
 
 @NgModule({
     declarations: [
@@ -47,7 +48,8 @@ import { FormsModule } from '@angular/forms';
         DropdownModule,
         ProgressBarModule,
         ToastModule,
-        FormsModule
+        FormsModule,
+        PlanificationModule
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

@@ -16,6 +16,7 @@ import { MydashboardComponent } from './demo/components/mydashboard/mydashboard.
                     { path: 'documentation', loadChildren: () => import('./demo/components/documentation/documentation.module').then(m => m.DocumentationModule) },
                     { path: 'blocks', loadChildren: () => import('./demo/components/primeblocks/primeblocks.module').then(m => m.PrimeBlocksModule) },
                     { path: 'pages', loadChildren: () => import('./demo/components/pages/pages.module').then(m => m.PagesModule) },
+                    { path: 'plan', loadChildren: () => import('./pages/planification/planification.module').then(m => m.PlanificationModule) },
                     // New Update Template
                     { path: 'mydashboard', component: MydashboardComponent },
                 ],
