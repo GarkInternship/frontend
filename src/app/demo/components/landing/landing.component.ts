@@ -60,4 +60,12 @@ import { LayoutService } from 'src/app/layout/service/app.layout.service';
 })
 export class LandingComponent {
     constructor(public layoutService: LayoutService, public router: Router) { }
+
+    goToRegister() {
+        this.router.navigateByUrl("/auth/register");
+    }
+
+    goToLogin() {
+        this.router.navigateByUrl("/auth/login");
+    }
 }
