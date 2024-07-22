@@ -1,0 +1,18 @@
+<div mat-dialog>
+<h1 mat-dialog-title>Créer un groupe</h1>
+<div mat-dialog-content>
+    <p>Voulez-vous créer un groupe maintenant pour {{ data.club.nom }} ?</p>
+    <form [formGroup]="groupForm" (ngSubmit)="createGroup()">
+        <div class="field">
+            <label for="niveau">Niveau</label>
+            <select id="niveau" formControlName="niveau" class="custom-select">
+                <option *ngFor="let level of niveaux" [value]="level">{{ level }}</option>
+            </select>
+        </div>
+        <button mat-button type="submit" class="custom-button">Créer</button>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button style="margin-top: 3px;" mat-button class="custom-button" (click)="onNoClick()">Plus tard</button>
+</div>
+</div>

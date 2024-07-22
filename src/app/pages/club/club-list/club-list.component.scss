@@ -1,0 +1,78 @@
+.card {
+    background-color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    h5 {
+        color: #B7EF3F;
+        margin-bottom: 1rem;
+    }
+
+    .p-datatable {
+        border: 1px solid #E9E9E9;
+        border-radius: 0.5rem;
+
+        .p-datatable-thead > tr > th {
+            background-color: #B7EF3F;
+            color: white;
+        }
+
+        .p-datatable-tbody > tr > td {
+            border: 1px solid #E9E9E9;
+        }
+
+        .p-paginator {
+            background-color: #B7EF3F;
+            color: white;
+
+            .p-paginator-pages > .p-paginator-page {
+                color: white;
+
+                &.p-highlight {
+                    background-color: #FAFAFA;
+                    color: #B7EF3F;
+                }
+            }
+        }
+    }
+
+    .p-button {
+        &-outlined {
+            border-color: #B7EF3F;
+            color: #B7EF3F;
+
+            &:hover {
+                background-color: #B7EF3F;
+                color: white;
+            }
+        }
+
+        &-danger {
+            background-color: #B7EF3F;
+            border: none;
+
+            &:hover {
+                background-color: darken(#B7EF3F, 10%);
+            }
+        }
+    }
+
+    .p-input-icon-left input {
+        border-color: #E9E9E9;
+        box-shadow: 0 0 5px #B7EF3F;
+        &:focus {
+            border-color: #B7EF3F;
+            box-shadow: 0 0 5px #B7EF3F;
+        }
+    }
+    .p-input-icon-left {
+        width: 40%;
+    }
+    .club-logo {
+        max-width: 50px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}

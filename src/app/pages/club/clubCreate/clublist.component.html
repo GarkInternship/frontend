@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="card p-fluid">
+        <div style="text-align: center;">
+            <img src="./assets/demo/images/logo/logo.jpg" style="max-width: 100px; height: auto;" alt="Club Logo">
+            <h3 style="margin-top: 2px;">Creating Club</h3>
+        </div>
+        <form [formGroup]="clubForm" (ngSubmit)="createClub()">
+            <div class="field" style="text-align:center">
+                <label for="image" class="file-upload-button">
+                        <span class="file-icon">
+                            <i class="fa-regular fa-file-image"></i>
+                        </span>
+                    <input type="file" id="image" (change)="onImageSelected($event)" formControlName="image" />
+                </label>
+            </div>
+
+
+            <div class="field">
+                <label for="nom">Nom</label>
+                <input pInputText id="nom" formControlName="nom" type="text" />
+            </div>
+            <div class="field">
+                <label for="president">President</label>
+                <input pInputText id="president" formControlName="president" type="text" />
+            </div>
+            <div class="field">
+                <label for="foundationYear">Fondation année</label>
+                <p-calendar [showIcon]="true" inputId="foundationYear" formControlName="foundationYear"></p-calendar>
+            </div>
+            <div class="field">
+                <label for="location">Location</label>
+                <p-autoComplete [(ngModel)]="selectedCountryAdvanced" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" field="name" [dropdown]="true" formControlName="location"></p-autoComplete>
+            </div>
+
+
+
+            <button pButton type="submit" label="Create" class="custom-button"></button>
+        </form>
+    </div>
+</div>

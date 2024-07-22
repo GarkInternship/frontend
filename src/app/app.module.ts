@@ -28,6 +28,11 @@ import { SliderModule } from 'primeng/slider';
 import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
 import {PlanificationModule} from "./pages/planification/planification.module";
+import {ClubModule} from "./pages/club/club.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from "@angular/material/dialog";
+import {HttpClientModule} from "@angular/common/http";
+import {GroupModule} from "./pages/group/group.module";
 
 @NgModule({
     declarations: [
@@ -49,7 +54,12 @@ import {PlanificationModule} from "./pages/planification/planification.module";
         ProgressBarModule,
         ToastModule,
         FormsModule,
-        PlanificationModule
+        PlanificationModule,
+        ClubModule,
+        BrowserAnimationsModule,
+        MatDialogModule, // Add MatDialogModule
+        HttpClientModule,
+        GroupModule
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

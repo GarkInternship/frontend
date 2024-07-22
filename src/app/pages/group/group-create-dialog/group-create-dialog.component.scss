@@ -1,0 +1,74 @@
+/* General Styles */
+mat-dialog-title {
+    color: #B7EF3F;
+    font-weight: bold;
+}
+
+mat-dialog-content {
+    background-color: #FAFAFA;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+
+mat-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAFAFA;
+    padding: 1rem;
+    border-top: 1px solid #B7EF3F;
+}
+
+.field {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #B7EF3F;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    color: #333;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.custom-select:focus {
+    border-color: #B7EF3F;
+    outline: none;
+}
+
+.custom-select option {
+    background-color: #FAFAFA;
+    color: #333;
+}
+
+.custom-button {
+    background-color: #B7EF3F;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #FAFAFA;
+    color: #333;
+    border: 2px solid #B7EF3F;
+}
+
+.custom-button:focus {
+    outline: none;
+}

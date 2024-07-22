@@ -31,6 +31,7 @@ export class AppMenuComponent implements OnInit {
                     { label: 'Boite de reception', icon: 'pi pi-inbox', routerLink: ['/reception'] },
                     { label: 'Statistiques', icon: 'pi pi-fw pi-home', routerLink: ['/stats'] },
                     { label: 'Collecte', icon: 'pi pi-fw pi-home', routerLink: ['/collecte'] },
+                    { label: 'ClubView', icon: 'pi pi-fw pi-home', routerLink: ['/clubView/clubview'] },
                 ]
             },
 

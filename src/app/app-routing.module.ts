@@ -18,11 +18,15 @@ import {AuthGuardService} from "./guards/auth-guard.service";
                     { path: 'documentation', loadChildren: () => import('./demo/components/documentation/documentation.module').then(m => m.DocumentationModule) },
                     { path: 'blocks', loadChildren: () => import('./demo/components/primeblocks/primeblocks.module').then(m => m.PrimeBlocksModule) },
                     { path: 'pages', loadChildren: () => import('./demo/components/pages/pages.module').then(m => m.PagesModule) },
-                    { path: 'plan', loadChildren: () => import('./pages/planification/planification.module').then(m => m.PlanificationModule)},
+                    { path: 'plan', loadChildren: () => import('./pages/planification/planification.module').then(m => m.PlanificationModule) },
+                    { path: 'clubView', loadChildren: () => import('./pages/club/club.module').then(m => m.ClubModule) },
+
                     // New Update Template
                     { path: 'mydashboard', component: MydashboardComponent },
                 ],
             },
+            { path: 'club', loadChildren: () => import('./pages/club/club.module').then(m => m.ClubModule) },
+            { path: 'group', loadChildren: () => import('./pages/group/group.module').then(m => m.GroupModule) },
             { path: 'auth', loadChildren: () => import('./demo/components/auth/auth.module').then(m => m.AuthModule) },
             { path: 'landing', loadChildren: () => import('./demo/components/landing/landing.module').then(m => m.LandingModule)},
             { path: 'pages/notfound', component: NotfoundComponent },

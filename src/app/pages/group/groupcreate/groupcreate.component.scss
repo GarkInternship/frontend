@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .card {
+        width: 400px;
+        padding: 2rem;
+    }
+
+    .custom-button {
+        background-color: #B7EF3F;
+        color: black;
+        border: none;
+
+        &:hover {
+            background-color: #E9E9E9;
+        }
+    }
+}

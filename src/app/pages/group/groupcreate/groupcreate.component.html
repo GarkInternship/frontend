@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="card p-fluid">
+        <h5>Créer un groupe</h5>
+        <div *ngIf="!creatingGroup">
+            <p>Voulez-vous créer un groupe maintenant ?</p>
+            <button pButton (click)="startCreatingGroup()" label="Créer un groupe">ajouter group</button>
+            <button pButton (click)="skipCreatingGroup()" label="Plus tard">aprés</button>
+        </div>
+
+        <form *ngIf="creatingGroup" [formGroup]="groupForm" (ngSubmit)="createGroup()">
+            <div class="field">
+                <label for="niveau">Niveau</label>
+                <select pDropdown id="niveau" formControlName="niveau">
+                    <option *ngFor="let level of niveaux" [value]="level">{{ level }}</option>
+                </select>
+            </div>
+            <button pButton type="submit" label="Créer" class="custom-button">ajouter</button>
+        </form>
+    </div>
+</div>
